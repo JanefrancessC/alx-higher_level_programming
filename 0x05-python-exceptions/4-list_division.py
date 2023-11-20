@@ -4,7 +4,8 @@ def list_division(my_list_1, my_list_2, list_length):
     result = []
     while i < list_length:
         try:
-            if type(my_list_1[i]) in [int, float] and type(my_list_2[i]) in [int, float]:
+            if type(my_list_1[i]) in [int, float]
+            and type(my_list_2[i]) in [int, float]:
                 result.append(my_list_1[i] / my_list_2[i])
             else:
                 print("Wrong type")
@@ -13,6 +14,6 @@ def list_division(my_list_1, my_list_2, list_length):
         except IndexError:
             print("out of range")
             break
-        i += 1
         finally:
-            return result
+            i += 1
+    return result
