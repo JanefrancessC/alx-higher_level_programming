@@ -58,7 +58,7 @@ class Square:
                 or n < 1 for n in value:
                     raise TypeError(
                             "position must be a tuple of 2 positive integers")
-        self.__position = value
+                    self.__position = value
 
     def my_print(self):
         """
@@ -67,7 +67,10 @@ class Square:
         if self.size == 0:
             print()
         else:
-            for i in range(self.position[1]):
+            for k in range(self.position[1]):
                 print()
-            for j in range(self.size):
-                print("f{' ' * self.position[0]}#{'#' * (self.size - 1)}")
+            for i in range(self.size):
+                print(" " * self.position[0], end="")
+                for j in range(self.size):
+                    print("#", end="")
+                print()
