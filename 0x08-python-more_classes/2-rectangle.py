@@ -3,6 +3,7 @@
 
 
 class Rectangle:
+    """A Rectangle class"""
     def __init__(self, width=0, height=0):
         """width and height are private attributes for class Rectangle
         Args:
@@ -21,7 +22,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        if type(value) is not int:
+        if type(value) != int:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
