@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """ class Rectangle with private instance attributes """
+    """class Rectangle with private instance attributes"""
     def __init__(self, width=0, height=0):
         """ width and height are private attributes of Rectangle
         Args:
