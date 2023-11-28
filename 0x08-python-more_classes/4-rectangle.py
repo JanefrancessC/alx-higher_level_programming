@@ -62,4 +62,5 @@ class Rectangle:
         return res
 
     def __repl__(self):
-        return f"Rectangle({self.width}, {self.height})"
+        res = f"Rectangle({self.width}, {self.height})"
+        return res
