@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-def magic_string():
-    return "Best School" * (len(magic_string.__name__) - 1)
+def magic_string(res=[]):
+    res += ["BestSchool"]
+    return ", ".join(res)
